@@ -46,8 +46,28 @@
                 <br>
                 <form id="contacto">
                     <fieldset>
+                        <legend>Formulario</legend>
                         <label for="nombre">Nombre:</label>
-                        <input name="nombre" type="text" placeholder="Introduce tu nombre" required autofocus>
+                        <input id="nombre" name="nombre" type="text" placeholder="Introduce tu nombre" maxlength=30 pattern="^[a-zA-Z0-9]+$" autofocus>
+                        <br>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="email" placeholder="Introduce tu email" required>
+                        <br>
+                        <br>
+                        <label for="edad">Edad:</label>
+                        <input id="edad" name="edad" type="number" placeholder="Introduce tu edad" min="18" max="99" required>
+                        <br>
+                        <br>
+                        <label for="consulta">Consulta:</label>
+                        <textarea id="consulta" name="consulta"  placeholder="Introduce tu consulta" rows="4" cols="20" required></textarea>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="prvCookie" name="prvCookie" value=true required>
+                        <label for="prvCookie">Acepto condiciones de privacidad y cookies</label>
+                        <br>
+                        <br>
+                        <button type="submit">Enviar</button> 
                     </fieldset>
 
                 </form>
